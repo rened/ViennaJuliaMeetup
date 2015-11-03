@@ -267,6 +267,38 @@ ProfileView.view()
 ---
 ![](https://dl.dropboxusercontent.com/u/783142/imagesforslides/juliaoptim/2.png)
 ---
+.left-column[
+### Profiling
+##### @time
+##### @profile
+##### ProfileView
+##### Memory allocations
+]
+.right-column[
+```reveal
+julia --track-allocation=user myscript.jl
+```
+```reveal
+mycode()
+Profile.clear_malloc_data()
+mycode()
+```
+Results found in `.mem` files
+
+```
+
+
+
+
+
+
+
+
+http://docs.julialang.org/en/release-0.4/manual/
+profile/#memory-allocation-analysis
+```
+]
+---
 template: inverse
 # Memory Layout
 ---
